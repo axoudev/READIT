@@ -19,3 +19,16 @@ function indexAction(\PDO $connection){
         include '../app/views/posts/index.php';
     $content = ob_get_clean();
 }
+
+
+function showAction(\PDO $connection, int $id){
+    include_once '../app/models/postsModel.php';
+    $post = PostsModel\findOneById($connection, $id);
+
+    GLOBAL $content, $title;
+    $title = $post['title'];
+
+    ob_start();
+        include '../app/views/posts/show.php';
+    $content = ob_get_clean();
+}
