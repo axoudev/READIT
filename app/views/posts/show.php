@@ -12,5 +12,9 @@
 </div>
 
 
-
+<!-- TAGS LIST -->
+<?php
+    include_once '../app/controllers/tagsController.php';
+    \App\Controllers\TagsController\indexByPostIdAction($connection, $post['id']);
+?>
 
