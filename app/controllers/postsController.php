@@ -31,6 +31,9 @@ function showAction(\PDO $connection, int $id){
     include_once '../app/models/tagsModel.php';
     $tags = \App\Models\TagsModel\findAllByPostId($connection, $id);
 
+    include_once '../app/models/commentsModel.php';
+    $comments = \App\Models\CommentsModel\findAllByPostId($connection, $id);
+
     GLOBAL $content, $title;
     $title = $post['title'];
 

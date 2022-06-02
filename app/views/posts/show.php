@@ -13,11 +13,10 @@
 
 
 <!-- TAGS LIST -->
-<?php
-    include_once '../app/views/tags/show.php';
-?>
+<?php include_once '../app/views/tags/indexByPostId.php'; ?>
 
 <!-- AUTHOR DETAILS -->
-<?php
-    include_once '../app/views/authors/show.php';
-?>
+<?php include_once '../app/views/authors/show.php'; ?>
+
+<!-- COMMENTS LIST -->
+<?php include_once '../app/views/comments/indexByPostId.php'; ?>
