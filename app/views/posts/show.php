@@ -14,7 +14,10 @@
 
 <!-- TAGS LIST -->
 <?php
-    include_once '../app/controllers/tagsController.php';
-    \App\Controllers\TagsController\indexByPostIdAction($connection, $post['id']);
+    include_once '../app/views/tags/show.php';
 ?>
 
+<!-- AUTHOR DETAILS -->
+<?php
+    include_once '../app/views/authors/show.php';
+?>
