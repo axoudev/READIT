@@ -1,22 +1,6 @@
-<div class="sidebar-box">
-        <form action="#" class="search-form">
-        <div class="form-group">
-            <span class="icon icon-search"></span>
-            <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-        </div>
-        </form>
-    </div>
-    <div class="sidebar-box ftco-animate">
-        <div class="categories">
-        <h3>Categories</h3>
-        <li><a href="#">Illustration <span class="ion-ios-arrow-forward"></span></a></li>
-        <li><a href="#">Branding <span class="ion-ios-arrow-forward"></span></a></li>
-        <li><a href="#">Application <span class="ion-ios-arrow-forward"></span></a></li>
-        <li><a href="#">Design <span class="ion-ios-arrow-forward"></span></a></li>
-        <li><a href="#">Marketing <span class="ion-ios-arrow-forward"></span></a></li>
-        </div>
-    </div>
-
+    <?php include '../app/views/template/partials/_search.php' ?>
+    
+    <?php include '../app/views/categories/index.php' ?>
     <div class="sidebar-box ftco-animate">
         <h3>Recent Blog</h3>
         <div class="block-21 mb-4 d-flex">
